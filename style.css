@@ -2,11 +2,15 @@
 
 body {
     background: #FFFFFF;
-}
-
-body {
     background: url(images/main-header.jpg) no-repeat;
     width: 100% !important;
+    margin: 0;
+}
+
+.fill-content:after{
+    display: block;
+    content: '';
+    clear: both;
 }
 
 h1,
@@ -37,12 +41,6 @@ li {
     border-radius: 0px;
 }
 
-header >hr {
-    display: block;
-    border-width: 2px;
-    border-color: #F1D2D3;
-}
-
 #banner img {
     width: 100%;
 }
@@ -61,9 +59,6 @@ header >hr {
     display: block;
     float: right;
     background: #F2F2F2;
-}
-
-#sign-in {
     padding-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -74,54 +69,28 @@ header >hr {
     display: block;
     text-align: center;
     margin: 0 auto;
-}
-
-#foot:after {
-    display: block;
-    content: '';
-    clear: both;
+    border-bottom: 1px dotted #c5341c;
+    padding-bottom: 12px;
 }
 
 #foot #left li {
-    float: left;
-    margin: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
-
-/*
-
-#foot #left:after{
-    display: block;
-    content: '';
-    clear: both;
-}
-*/
-
-#foot #right li {
-    float: left;
-    margin: 0 5px;
+#foot #left img {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
-#foot #right {
-    display: block;
-    content: '';
-    clear: both;
+#foot #right li{
+    display: inline-block;
+    text-align: right;
+    float: right;
 }
-
-#foot #left {
-    display: block;
-    content: '';
-    clear: both;
-}
-
-
-/*
-#foot #right:after{
-    display: block;
-    content: '';
-    clear: both;
-}
-*/
 
 nav {
     /*    border-top: 1px solid #F1D2D3;*/
@@ -134,12 +103,6 @@ a:link {
     text-decoration: none !important;
 }
 
-nav:after {
-    display: block;
-    content: '';
-    clear: both;
-}
-
 nav li a {
     float: left;
     margin-left: 10px;
@@ -147,70 +110,55 @@ nav li a {
     color: #D0614F;
 }
 
-#main #left {
-    float: left;
-    padding-right: 5px;
-    border-right: 1px solid black;
+#feauterd{
+    width: 100%;
 }
-
-#main #right {
-    padding-left: 5px;
-}
-
 
 /*
-#main:after{
-    content: '';
-    display: block;
-    clear: both;
-}
-*/
-
 #main {
     display: inline-block;
     border: 1px solid #FFFFFF;
     overflow: auto;
-    width: 100%;
 }
+*/
 
 #main {
     width: 75%;
+    border-top: 1px solid #c5341c;
+    padding-top: 12px;
+    float: left;
     /*    margin-bottom: 20px;*/
 }
 
 aside {
-    width: 23% !important;
-}
-
-aside {
     float: right;
+    width: 23% !important;
     margin-top: 20px;
 }
 
-
-/*
-aside:after{
-    display: block;
-    content: '';
-    clear: both;
+#main #left {
+    float: left;
+    padding-right: 5px;
+    width: 48%;
+    border-right: 1px solid #b3b3b3;
 }
-*/
+
+#main #right {
+    float: right;
+/*    padding-left: 5px;*/
+}
 
 aside #top {
     color: white;
+    padding: 2px;
     background: #959595;
 }
 
 aside #bottom {
     margin-top: 5px;
+    padding: 2px;
     color: white;
     background: #224697;
-}
-
-.hr-color {
-    display: block;
-    border-width: 4px;
-    border-color: coral;
 }
 
 #services {
@@ -221,20 +169,25 @@ aside #bottom {
     margin: auto;
 }
 
+#services img{
+    margin-right: 15px;
+}
+
+#clients img{
+    margin-right: 15px;
+}
+
 footer {
     background: #DCDCDC;
+    margin-top: 12px;
+}
+
+footer .wrapper{
+    border-top: 1px solid #c5341c;
 }
 
 .inline {
     display: inline-block;
-}
-
-footer:after,
-ul:after,
-#head:after {
-    display: block;
-    content: '';
-    clear: both;
 }
 
 #content>ul>li {
@@ -242,11 +195,6 @@ ul:after,
     margin: 20px auto;
     width: 25%;
     text-align: left;
-    /*
-    margin-bottom:20px;
-    margin-left:20px;
-    margin-right: 100px;
-*/
 }
 
 #head h3 {
@@ -289,15 +237,6 @@ footer #social {
 .access ul:nth-child(2n+1) {
     float: right;
 }
-
-
-/* this is for new line
-.access ul:after{
-    content: '\a';
-    white-space: pre;
-}
-*/
-
 
 /*////////Fale cososco///////*/
 
@@ -357,15 +296,3 @@ section#map {
 .setor ul li a{
     padding: 3px 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-

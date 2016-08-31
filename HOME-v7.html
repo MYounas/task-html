@@ -4,20 +4,19 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css">-->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+<!--    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">-->
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
+    <header>
+        <div class="wrapper">
             <div id="top-header">
                 <div id="logo">
                     <img src="images/logo.jpg">
                 </div>
                 <div id="search">
                     <input type="text" placeholder="Search">
-                    <span><i class="fa fa-search"></i></span>
+                    <img src="images/search.png" style="width:20px;margin-top:5px">
                 </div>
                 <div id="sign-in">
                     <input type="text" placeholder="Login">
@@ -31,21 +30,14 @@
                             <li>Muhammad Younas</li>
                             <li>HAris Zafar</li>
                             <li>Usama Imran</li>
-                        </ul>
-                    </div>
-                    <div id="right">
-                        <ul>
-                            <li><span><i class="fa fa-facebook"></i></span></li>
-                            <li><span><i class="fa fa-twitter"></i></span></li>
-                            <li><span><i class="fa fa-google-plus"></i></span></li>
+                            <img src="images/abc-icon.png">
+                            <img src="images/twitter-icon.png">
+                            <img src="images/facebook-icon.png">
                         </ul>
                     </div>
                 </div>
-                <!--                alternative method for get rid of floating bug best method in css #footer:after{}-->
-                <!--                <div style="clear:both"></div>-->
             </div>
-            <hr class="hr-color">
-            <nav>
+            <nav class="fill-content">
                 <ul>
                     <li><a href="#">QUEM SOMOS</a></li>
                     <li><a href="#">CUB</a></li>
@@ -60,11 +52,12 @@
             <div id="banner">
                 <img src="images/home-banner.jpg">
             </div>
-        </header>
-        <div id="content">
-            <h1>NOTICAS/</h1>
-            <section id="main">
-                <hr class="hr-color">
+        </div>
+    </header>
+    <div id="content" class="wrapper">
+        <h1>NOTICAS/</h1>
+        <div id="feauterd">
+            <section id="main" class="fill-content">
                 <div id="left">
                     <img src="images/home_main_section_left_image.jpg">
                     <h2>continuerr</h2>
@@ -86,16 +79,17 @@
                             <h2>PRSO SALARIAL</h2>
                             <p>ext ever since the 1500s, when an unknown printer took a</p>
                         </li>
-                        <hr>
                     </ul>
                 </div>
             </section>
             <aside>
-                <div id="top">
-                    <p> type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-                </div>
-                <div id="bottom">
-                    <p> type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                <div class="wrapper">
+                    <div id="top">
+                        <p> type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                    </div>
+                    <div id="bottom">
+                        <p> type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -119,10 +113,9 @@
             <img src="images\client-5.jpg">
         </section>
     </div>
-    <footer>
-        <hr class="hr-color">
+    <footer class="fill-content">
         <div class="wrapper">
-            <div id="head">
+            <div id="head" class="fill-content">
                 <h3>MAPA<br>Do site/</h3>
                 <h3>MAPA<br>Do site/</h3>
             </div>
